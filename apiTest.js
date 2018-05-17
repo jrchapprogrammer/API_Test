@@ -1,19 +1,18 @@
-const axios = require("axios");
+// const axios = require("axios");
 
 const url = `https://api.github.com/users/jrchapprogrammer/repos?type=owner`;
-let repo = [];
+let repos = [];
 let repoData = {};
 
-function getRepo() {
+function getRepos() {
   axios
     .get(url)
     .catch(error => console.log("BAD", error))
     .then(response => console.log("GOOD", response));
 }
 
-/* repo = getRepo(url);
-// console.log(repo);
+repos = getRepos(url);
+console.log(repos[0]);
 
-repoData = repo.data;
-console.log(repoData); */
-getRepo();
+const apiDiv = document.querySelector("#api-container");
+apiDiv.innerHTML = `<p>${repos}</p>`;

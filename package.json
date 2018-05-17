@@ -1,5 +1,5 @@
 {
-  "name": "Api_Test",
+  "name": "api_test",
   "version": "1.0.0",
   "description": "apiTest",
   "main": "apiTest.js",
@@ -9,6 +9,7 @@
   "author": "John Chappelle III",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10"
   }
 }
