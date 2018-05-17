@@ -2,7 +2,7 @@
 
 const url = `https://api.github.com/users/jrchapprogrammer/repos?type=owner`;
 let repos = [];
-let apiDiv = document.getElementById("#api-container");
+let apiDiv = document.getElementById("api-container");
 apiDiv.innerHTML = "";
 
 function generateSuccessHTMLOutput(response) {
